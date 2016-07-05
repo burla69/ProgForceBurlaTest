@@ -16,6 +16,10 @@
 		1FFF5D271D2C0A9100B687BE /* ProgForceBurlaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D261D2C0A9100B687BE /* ProgForceBurlaTestTests.swift */; };
 		1FFF5D321D2C0A9100B687BE /* ProgForceBurlaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D311D2C0A9100B687BE /* ProgForceBurlaTestUITests.swift */; };
 		1FFF5D401D2C0DDE00B687BE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D3F1D2C0DDE00B687BE /* NetworkManager.swift */; };
+		1FFF5D421D2C2C9B00B687BE /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D411D2C2C9B00B687BE /* RepoModel.swift */; };
+		1FFF5D441D2C2D6F00B687BE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D431D2C2D6F00B687BE /* UserModel.swift */; };
+		1FFF5D461D2C324900B687BE /* UserReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D451D2C324900B687BE /* UserReposViewController.swift */; };
+		1FFF5D481D2C398200B687BE /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D471D2C398200B687BE /* RepoCell.swift */; };
 		7D11A0C6B2666204C30FE67A /* Pods_ProgForceBurlaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2FD859857570AFA4FDE5F6 /* Pods_ProgForceBurlaTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,10 @@
 		1FFF5D311D2C0A9100B687BE /* ProgForceBurlaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgForceBurlaTestUITests.swift; sourceTree = "<group>"; };
 		1FFF5D331D2C0A9100B687BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFF5D3F1D2C0DDE00B687BE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1FFF5D411D2C2C9B00B687BE /* RepoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		1FFF5D431D2C2D6F00B687BE /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1FFF5D451D2C324900B687BE /* UserReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserReposViewController.swift; sourceTree = "<group>"; };
+		1FFF5D471D2C398200B687BE /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		367973ADF69E3A0E0D42EEE8 /* Pods-ProgForceBurlaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgForceBurlaTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgForceBurlaTest/Pods-ProgForceBurlaTest.release.xcconfig"; sourceTree = "<group>"; };
 		3815FECEE9AD5260BCE54399 /* Pods-ProgForceBurlaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgForceBurlaTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgForceBurlaTest/Pods-ProgForceBurlaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		ED2FD859857570AFA4FDE5F6 /* Pods_ProgForceBurlaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgForceBurlaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +126,10 @@
 			children = (
 				1FFF5D0E1D2C0A9100B687BE /* AppDelegate.swift */,
 				1FFF5D101D2C0A9100B687BE /* ViewController.swift */,
+				1FFF5D451D2C324900B687BE /* UserReposViewController.swift */,
+				1FFF5D411D2C2C9B00B687BE /* RepoModel.swift */,
+				1FFF5D431D2C2D6F00B687BE /* UserModel.swift */,
+				1FFF5D471D2C398200B687BE /* RepoCell.swift */,
 				1FFF5D3F1D2C0DDE00B687BE /* NetworkManager.swift */,
 				1FFF5D121D2C0A9100B687BE /* Main.storyboard */,
 				1FFF5D181D2C0A9100B687BE /* Assets.xcassets */,
@@ -337,10 +349,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFF5D461D2C324900B687BE /* UserReposViewController.swift in Sources */,
 				1FFF5D401D2C0DDE00B687BE /* NetworkManager.swift in Sources */,
 				1FFF5D171D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodeld in Sources */,
 				1FFF5D111D2C0A9100B687BE /* ViewController.swift in Sources */,
+				1FFF5D421D2C2C9B00B687BE /* RepoModel.swift in Sources */,
+				1FFF5D441D2C2D6F00B687BE /* UserModel.swift in Sources */,
 				1FFF5D0F1D2C0A9100B687BE /* AppDelegate.swift in Sources */,
+				1FFF5D481D2C398200B687BE /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

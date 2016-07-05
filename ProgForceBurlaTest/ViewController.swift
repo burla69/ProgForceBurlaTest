@@ -21,11 +21,6 @@ class ViewController: UIViewController {
         
         self.prepareUI()
         
-        
-        NetworkManager.sharedManager.getUserRepos("burla69") { (success, response, error) in
-            print("response: \(response)")
-        }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,11 +57,33 @@ class ViewController: UIViewController {
             }
             
         } else {
-            
+            NetworkManager.sharedManager.getUserRepos(self.userNameTextField.text!) { (success, response, error) in
+                print("response: \(response)")
+                
+                if success {
+                    print("response: \(response)")
+                    
+                    let reposArray = RepoModel.getReposFrom(response!)
+                    
+                    self.performSegueWithIdentifier("showUserRepo", sender: reposArray)
+                    
+                } else {
+                    print("error: \(error?.localizedDescription)")
+                }
+                
+            }
         }
-
         
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showUserRepo" {
+            let viewController:UserReposViewController = segue.destinationViewController as! UserReposViewController
+            viewController.reposList = sender as! [RepoModel]
+        }
+    }
+    
 
 
 }
