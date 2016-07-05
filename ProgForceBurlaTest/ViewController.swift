@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var userNameTextField: UITextField!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,13 +58,15 @@ class ViewController: UIViewController {
             }
             
         } else {
+
+            self.activityIndicator.startAnimating()
+            
             NetworkManager.sharedManager.getUserRepos(self.userNameTextField.text!) { (success, response, error) in
-                print("response: \(response)")
                 
                 if success {
-                    print("response: \(response)")
-                    
                     let reposArray = RepoModel.getReposFrom(response!)
+                    
+                    self.activityIndicator.stopAnimating()
                     
                     self.performSegueWithIdentifier("showUserRepo", sender: reposArray)
                     
@@ -73,7 +76,6 @@ class ViewController: UIViewController {
                 
             }
         }
-        
     }
     
     

@@ -47,8 +47,6 @@ class UserReposViewController: UIViewController, UITableViewDelegate, UITableVie
     func getUserProfile() {
         
         NetworkManager.sharedManager.getUserProfile(self.userName!) { (success, response, error) in
-            print("getUserProfile: \(response)")
-            
             if success {
 
                 self.user = UserModel.userFromResponse(response!)

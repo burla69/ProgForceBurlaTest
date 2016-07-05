@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class NetworkManager: NSObject {
     
-    public typealias Completion = (success: Bool, response: JSON?, error: NSError?) -> Void
+    internal typealias Completion = (success: Bool, response: JSON?, error: NSError?) -> Void
     
     static var sharedManager = NetworkManager()
     
@@ -25,11 +25,6 @@ class NetworkManager: NSObject {
         Alamofire.request(.GET, path, parameters: parameters, encoding: .JSON)
             .responseJSON { response in
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print("response.result: \(response.result)")   // result of response serialization
-                
                 
                 switch response.result {
                     
@@ -46,7 +41,7 @@ class NetworkManager: NSObject {
     }
     
     
-    public func getUserRepos(userName: String, completion: Completion) {
+    internal func getUserRepos(userName: String, completion: Completion) {
         self.performRequestWith("https://api.github.com/users/\(userName)/repos", parameters: nil) { (success, response, error) -> Void in
             if success {
                 completion(success: true, response: response, error: nil)
@@ -56,7 +51,7 @@ class NetworkManager: NSObject {
         }
     }
     
-    public func getUserProfile(userName: String, completion: Completion) {
+    internal func getUserProfile(userName: String, completion: Completion) {
         self.performRequestWith("https://api.github.com/users/\(userName)", parameters: nil) { (success, response, error) -> Void in
             if success {
                 completion(success: true, response: response, error: nil)
