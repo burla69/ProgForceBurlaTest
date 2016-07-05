@@ -37,8 +37,8 @@ class RepoCell: UITableViewCell {
         
         repoName.text = repo?.name
         repoLanguage.text = repo?.language
-        repoForksCount.text = "\(repo?.forks)"
-        repoStarsCount.text = "\(repo?.stargazersCount)"
+        repoForksCount.text = "\((repo?.forks)!)"
+        repoStarsCount.text = "\((repo?.stargazersCount)!)"
         
     }
 

@@ -56,5 +56,15 @@ class NetworkManager: NSObject {
         }
     }
     
+    public func getUserProfile(userName: String, completion: Completion) {
+        self.performRequestWith("https://api.github.com/users/\(userName)", parameters: nil) { (success, response, error) -> Void in
+            if success {
+                completion(success: true, response: response, error: nil)
+            } else {
+                completion(success: false, response: response, error: error)
+            }
+        }
+    }
+    
 
 }

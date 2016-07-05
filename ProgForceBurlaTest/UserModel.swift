@@ -11,59 +11,34 @@ import SwiftyJSON
 
 class UserModel: NSObject {
     
-//    
-//    var token = ""
-//    var userAvatar = ""
-//    var avatarUrl = ""
-//    var facebookID = 0
-//    var distance = 0.0
-//    var position = 0.0
-//    var time = 0.0
-//    var averageTime = 0
-//    var averageSpeed = 0.0
-//    var averageDistance = 0.0
-//    var lastChallenge: NSDate = NSDate()
-//    
-//    
-//    var userNameScore = ""
-//    var userFirstNameScore = ""
-//    var userLastNameScore = ""
-//    var userAvatarStringScore = ""
-//    
-//    static func userFromResponse(response: JSON) -> UserModel {
-//        
-//        print("userFromResponse \(response)")
-//        
-//        let user = UserModel()
-//        
-//        if let id = response["id"].int {user.id = id}
-//        
-//        if let username = response["username"].string {user.username = username}
-//        if let firstName = response["first_name"].string {user.firstName = firstName}
-//        if let email = response["email"].string {user.email = email}
-//        if let lastName = response["last_name"].string {user.lastName = lastName}
-//        if let facebookID = response["facebook_id"].int {user.facebookID = facebookID}
-//        if let phone = response["phone"].string {user.phone = phone}
-//        if let avatarUrl = response["avatar"].string {user.avatarUrl = avatarUrl}
-//
-//        if let userLastNameScore = response["user"]["last_name"].string {user.userLastNameScore = userLastNameScore}
-//        
-//        
-//        if let userAvatarStringScore = response["user"]["avatar"].string {user.userAvatarStringScore = userAvatarStringScore}
-//        
-//        return user
-//    }
-//    
-//    
-//    static func getUsersFrom(responce: JSON) -> [UserModel] {
-//        var users = [UserModel]()
-//        
-//        for (_,subJson):(String, JSON) in responce {
-//            users.append(UserModel.userFromResponse(subJson))
-//        }
-//        
-//        return users
-//    }
-//
+    var name = ""
+    var company = ""
+    var email = ""
+    
+    var userAvatar = ""
+    
+    var followersCount = 0
+    var followingCount = 0
+    var publicGists = 0
+    var publicRepos = 0
+
+    static func userFromResponse(response : JSON) -> UserModel{
+        
+        let user = UserModel()
+        if let name = response["name"].string {user.name = name}
+        if let company = response["company"].string {user.company = company}
+        if let email = response["email"].string {user.email = email}
+        if let userAvatar = response["avatar_url"].string {
+            user.userAvatar = userAvatar
+        }
+
+
+        if let followersCount = response["followers"].int {user.followersCount = followersCount}
+        if let followingCount = response["following"].int {user.followingCount = followingCount}
+        if let publicGists = response["public_gists"].int {user.publicGists = publicGists}
+        if let publicRepos = response["public_repos"].int {user.publicRepos = publicRepos}
+
+        return user
+    }
 
 }

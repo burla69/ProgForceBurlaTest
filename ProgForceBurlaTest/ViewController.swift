@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         if segue.identifier == "showUserRepo" {
             let viewController:UserReposViewController = segue.destinationViewController as! UserReposViewController
             viewController.reposList = sender as! [RepoModel]
+            viewController.userName = self.userNameTextField.text!
         }
     }
     
