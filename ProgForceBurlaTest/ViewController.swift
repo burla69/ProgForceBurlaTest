@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var knowMoreLabel: UILabel!
+    
+    @IBOutlet weak var userNameTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +35,36 @@ class ViewController: UIViewController {
     
     func prepareUI() {
         
-        if let appName =  NSBundle.mainBundle().infoDictionary!["CFBundleName"]{
-            self.title = appName as? String
+        if let appName =  NSBundle.mainBundle().infoDictionary!["CFBundleName"]{self.title = appName as? String}
+        
+    }
+    
+    //Mark: - Actions
+    
+    @IBAction func goButtonAction(sender: AnyObject) {
+        
+        let whitespace = NSCharacterSet.whitespaceCharacterSet()
+        
+        let containSpace = userNameTextField.text!.rangeOfCharacterFromSet(whitespace)
+        
+        if userNameTextField.text!.characters.count == 0 || containSpace != nil {
+            
+            let alertController = UIAlertController(title: "ProgForceBurlaTest", message: "Please, enter user name without spaces", preferredStyle: .Alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+                
+            }
+            
+            alertController.addAction(OKAction)
+            
+            self.presentViewController(alertController, animated: true) {
+                // ...
+            }
+            
+        } else {
+            
         }
+
         
     }
 
