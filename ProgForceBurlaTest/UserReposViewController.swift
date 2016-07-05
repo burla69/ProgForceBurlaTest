@@ -26,10 +26,16 @@ class UserReposViewController: UIViewController, UITableViewDelegate, UITableVie
             self.getUserProfile()
         }
     }
-
+    
+    var user : UserModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = userName
+        self.navigationController?.navigationBar.topItem?.title = ""
+        let button = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: #selector(UserReposViewController.theeDotsTap(_:)))
+        self.navigationItem.rightBarButtonItem = button
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,9 +51,9 @@ class UserReposViewController: UIViewController, UITableViewDelegate, UITableVie
             
             if success {
 
-                let user = UserModel.userFromResponse(response!)
+                self.user = UserModel.userFromResponse(response!)
                 
-                self.prapareUI(user)
+                self.prapareUI(self.user!)
                 
             } else {
                 print("error: \(error?.localizedDescription)")
@@ -75,6 +81,54 @@ class UserReposViewController: UIViewController, UITableViewDelegate, UITableVie
         publicRepos.text = "Public repos: \(user.publicRepos)"
 
     }
+    
+    func goBack()
+    {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    
+    // MARK: - Action Sheet
+    
+    func theeDotsTap(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: nil, message: "Choose action:", preferredStyle: .ActionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+            // ...
+        }
+        alertController.addAction(cancelAction)
+        
+        let openBrowser = UIAlertAction(title: "Open in browser", style: .Default) { (action) in
+            UIApplication.sharedApplication().openURL(NSURL(string: (self.user?.htmlURL)!)!)
+        }
+        alertController.addAction(openBrowser)
+        
+        let share = UIAlertAction(title: "Share", style: .Default) { (action) in
+            
+            let textToShare = "Awesome user!  Check out this amazing user!"
+            
+            if let website = NSURL(string: (self.user?.htmlURL)!) {
+                let objectsToShare = [textToShare, website]
+                let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+                
+                activityVC.popoverPresentationController?.sourceView = sender as? UIView
+                self.presentViewController(activityVC, animated: true, completion: nil)
+                
+            }
+
+        }
+        alertController.addAction(share)
+        
+        
+        self.presentViewController(alertController, animated: true) {
+            // ...
+        }
+        
+        
+        
+    }
+
     
 
     // MARK: - Table view data source

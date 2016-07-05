@@ -16,6 +16,8 @@ class UserModel: NSObject {
     var email = ""
     
     var userAvatar = ""
+    var htmlURL = ""
+
     
     var followersCount = 0
     var followingCount = 0
@@ -30,6 +32,10 @@ class UserModel: NSObject {
         if let email = response["email"].string {user.email = email}
         if let userAvatar = response["avatar_url"].string {
             user.userAvatar = userAvatar
+        }
+        
+        if let htmlURL = response["html_url"].string {
+            user.htmlURL = htmlURL
         }
 
 
