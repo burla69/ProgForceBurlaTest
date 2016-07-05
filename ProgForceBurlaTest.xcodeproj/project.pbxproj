@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FFF5D0F1D2C0A9100B687BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D0E1D2C0A9100B687BE /* AppDelegate.swift */; };
+		1FFF5D111D2C0A9100B687BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D101D2C0A9100B687BE /* ViewController.swift */; };
+		1FFF5D141D2C0A9100B687BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFF5D121D2C0A9100B687BE /* Main.storyboard */; };
+		1FFF5D171D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D151D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodeld */; };
+		1FFF5D191D2C0A9100B687BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFF5D181D2C0A9100B687BE /* Assets.xcassets */; };
+		1FFF5D1C1D2C0A9100B687BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFF5D1A1D2C0A9100B687BE /* LaunchScreen.storyboard */; };
+		1FFF5D271D2C0A9100B687BE /* ProgForceBurlaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D261D2C0A9100B687BE /* ProgForceBurlaTestTests.swift */; };
+		1FFF5D321D2C0A9100B687BE /* ProgForceBurlaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D311D2C0A9100B687BE /* ProgForceBurlaTestUITests.swift */; };
+		1FFF5D401D2C0DDE00B687BE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF5D3F1D2C0DDE00B687BE /* NetworkManager.swift */; };
+		7D11A0C6B2666204C30FE67A /* Pods_ProgForceBurlaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2FD859857570AFA4FDE5F6 /* Pods_ProgForceBurlaTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FFF5D231D2C0A9100B687BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FFF5D031D2C0A9100B687BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FFF5D0A1D2C0A9100B687BE;
+			remoteInfo = ProgForceBurlaTest;
+		};
+		1FFF5D2E1D2C0A9100B687BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FFF5D031D2C0A9100B687BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FFF5D0A1D2C0A9100B687BE;
+			remoteInfo = ProgForceBurlaTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FFF5D0B1D2C0A9100B687BE /* ProgForceBurlaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgForceBurlaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFF5D0E1D2C0A9100B687BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FFF5D101D2C0A9100B687BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FFF5D131D2C0A9100B687BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FFF5D161D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProgForceBurlaTest.xcdatamodel; sourceTree = "<group>"; };
+		1FFF5D181D2C0A9100B687BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FFF5D1B1D2C0A9100B687BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FFF5D1D1D2C0A9100B687BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FFF5D221D2C0A9100B687BE /* ProgForceBurlaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgForceBurlaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFF5D261D2C0A9100B687BE /* ProgForceBurlaTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgForceBurlaTestTests.swift; sourceTree = "<group>"; };
+		1FFF5D281D2C0A9100B687BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FFF5D2D1D2C0A9100B687BE /* ProgForceBurlaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgForceBurlaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFF5D311D2C0A9100B687BE /* ProgForceBurlaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgForceBurlaTestUITests.swift; sourceTree = "<group>"; };
+		1FFF5D331D2C0A9100B687BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FFF5D3F1D2C0DDE00B687BE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		367973ADF69E3A0E0D42EEE8 /* Pods-ProgForceBurlaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgForceBurlaTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgForceBurlaTest/Pods-ProgForceBurlaTest.release.xcconfig"; sourceTree = "<group>"; };
+		3815FECEE9AD5260BCE54399 /* Pods-ProgForceBurlaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgForceBurlaTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgForceBurlaTest/Pods-ProgForceBurlaTest.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2FD859857570AFA4FDE5F6 /* Pods_ProgForceBurlaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgForceBurlaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FFF5D081D2C0A9100B687BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D11A0C6B2666204C30FE67A /* Pods_ProgForceBurlaTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FFF5D1F1D2C0A9100B687BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FFF5D2A1D2C0A9100B687BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C82134BCA4345D71255125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2FD859857570AFA4FDE5F6 /* Pods_ProgForceBurlaTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FFF5D021D2C0A9100B687BE = {
+			isa = PBXGroup;
+			children = (
+				1FFF5D0D1D2C0A9100B687BE /* ProgForceBurlaTest */,
+				1FFF5D251D2C0A9100B687BE /* ProgForceBurlaTestTests */,
+				1FFF5D301D2C0A9100B687BE /* ProgForceBurlaTestUITests */,
+				1FFF5D0C1D2C0A9100B687BE /* Products */,
+				9FBEC1B376855A93AC97F56C /* Pods */,
+				09C82134BCA4345D71255125 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1FFF5D0C1D2C0A9100B687BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FFF5D0B1D2C0A9100B687BE /* ProgForceBurlaTest.app */,
+				1FFF5D221D2C0A9100B687BE /* ProgForceBurlaTestTests.xctest */,
+				1FFF5D2D1D2C0A9100B687BE /* ProgForceBurlaTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FFF5D0D1D2C0A9100B687BE /* ProgForceBurlaTest */ = {
+			isa = PBXGroup;
+			children = (
+				1FFF5D0E1D2C0A9100B687BE /* AppDelegate.swift */,
+				1FFF5D101D2C0A9100B687BE /* ViewController.swift */,
+				1FFF5D3F1D2C0DDE00B687BE /* NetworkManager.swift */,
+				1FFF5D121D2C0A9100B687BE /* Main.storyboard */,
+				1FFF5D181D2C0A9100B687BE /* Assets.xcassets */,
+				1FFF5D1A1D2C0A9100B687BE /* LaunchScreen.storyboard */,
+				1FFF5D1D1D2C0A9100B687BE /* Info.plist */,
+				1FFF5D151D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodeld */,
+			);
+			path = ProgForceBurlaTest;
+			sourceTree = "<group>";
+		};
+		1FFF5D251D2C0A9100B687BE /* ProgForceBurlaTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FFF5D261D2C0A9100B687BE /* ProgForceBurlaTestTests.swift */,
+				1FFF5D281D2C0A9100B687BE /* Info.plist */,
+			);
+			path = ProgForceBurlaTestTests;
+			sourceTree = "<group>";
+		};
+		1FFF5D301D2C0A9100B687BE /* ProgForceBurlaTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FFF5D311D2C0A9100B687BE /* ProgForceBurlaTestUITests.swift */,
+				1FFF5D331D2C0A9100B687BE /* Info.plist */,
+			);
+			path = ProgForceBurlaTestUITests;
+			sourceTree = "<group>";
+		};
+		9FBEC1B376855A93AC97F56C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3815FECEE9AD5260BCE54399 /* Pods-ProgForceBurlaTest.debug.xcconfig */,
+				367973ADF69E3A0E0D42EEE8 /* Pods-ProgForceBurlaTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FFF5D0A1D2C0A9100B687BE /* ProgForceBurlaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FFF5D361D2C0A9100B687BE /* Build configuration list for PBXNativeTarget "ProgForceBurlaTest" */;
+			buildPhases = (
+				47B325E93AA00B7250BF6286 /* [CP] Check Pods Manifest.lock */,
+				1FFF5D071D2C0A9100B687BE /* Sources */,
+				1FFF5D081D2C0A9100B687BE /* Frameworks */,
+				1FFF5D091D2C0A9100B687BE /* Resources */,
+				49956ED2F93A603A94D521BE /* [CP] Embed Pods Frameworks */,
+				E348516BD42648E36379BDD4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgForceBurlaTest;
+			productName = ProgForceBurlaTest;
+			productReference = 1FFF5D0B1D2C0A9100B687BE /* ProgForceBurlaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FFF5D211D2C0A9100B687BE /* ProgForceBurlaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FFF5D391D2C0A9100B687BE /* Build configuration list for PBXNativeTarget "ProgForceBurlaTestTests" */;
+			buildPhases = (
+				1FFF5D1E1D2C0A9100B687BE /* Sources */,
+				1FFF5D1F1D2C0A9100B687BE /* Frameworks */,
+				1FFF5D201D2C0A9100B687BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FFF5D241D2C0A9100B687BE /* PBXTargetDependency */,
+			);
+			name = ProgForceBurlaTestTests;
+			productName = ProgForceBurlaTestTests;
+			productReference = 1FFF5D221D2C0A9100B687BE /* ProgForceBurlaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FFF5D2C1D2C0A9100B687BE /* ProgForceBurlaTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FFF5D3C1D2C0A9100B687BE /* Build configuration list for PBXNativeTarget "ProgForceBurlaTestUITests" */;
+			buildPhases = (
+				1FFF5D291D2C0A9100B687BE /* Sources */,
+				1FFF5D2A1D2C0A9100B687BE /* Frameworks */,
+				1FFF5D2B1D2C0A9100B687BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FFF5D2F1D2C0A9100B687BE /* PBXTargetDependency */,
+			);
+			name = ProgForceBurlaTestUITests;
+			productName = ProgForceBurlaTestUITests;
+			productReference = 1FFF5D2D1D2C0A9100B687BE /* ProgForceBurlaTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FFF5D031D2C0A9100B687BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Александр";
+				TargetAttributes = {
+					1FFF5D0A1D2C0A9100B687BE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1FFF5D211D2C0A9100B687BE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1FFF5D0A1D2C0A9100B687BE;
+					};
+					1FFF5D2C1D2C0A9100B687BE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1FFF5D0A1D2C0A9100B687BE;
+					};
+				};
+			};
+			buildConfigurationList = 1FFF5D061D2C0A9100B687BE /* Build configuration list for PBXProject "ProgForceBurlaTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FFF5D021D2C0A9100B687BE;
+			productRefGroup = 1FFF5D0C1D2C0A9100B687BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FFF5D0A1D2C0A9100B687BE /* ProgForceBurlaTest */,
+				1FFF5D211D2C0A9100B687BE /* ProgForceBurlaTestTests */,
+				1FFF5D2C1D2C0A9100B687BE /* ProgForceBurlaTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FFF5D091D2C0A9100B687BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFF5D1C1D2C0A9100B687BE /* LaunchScreen.storyboard in Resources */,
+				1FFF5D191D2C0A9100B687BE /* Assets.xcassets in Resources */,
+				1FFF5D141D2C0A9100B687BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FFF5D201D2C0A9100B687BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FFF5D2B1D2C0A9100B687BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47B325E93AA00B7250BF6286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49956ED2F93A603A94D521BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProgForceBurlaTest/Pods-ProgForceBurlaTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E348516BD42648E36379BDD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProgForceBurlaTest/Pods-ProgForceBurlaTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FFF5D071D2C0A9100B687BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFF5D401D2C0DDE00B687BE /* NetworkManager.swift in Sources */,
+				1FFF5D171D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodeld in Sources */,
+				1FFF5D111D2C0A9100B687BE /* ViewController.swift in Sources */,
+				1FFF5D0F1D2C0A9100B687BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FFF5D1E1D2C0A9100B687BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFF5D271D2C0A9100B687BE /* ProgForceBurlaTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FFF5D291D2C0A9100B687BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFF5D321D2C0A9100B687BE /* ProgForceBurlaTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FFF5D241D2C0A9100B687BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FFF5D0A1D2C0A9100B687BE /* ProgForceBurlaTest */;
+			targetProxy = 1FFF5D231D2C0A9100B687BE /* PBXContainerItemProxy */;
+		};
+		1FFF5D2F1D2C0A9100B687BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FFF5D0A1D2C0A9100B687BE /* ProgForceBurlaTest */;
+			targetProxy = 1FFF5D2E1D2C0A9100B687BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FFF5D121D2C0A9100B687BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FFF5D131D2C0A9100B687BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FFF5D1A1D2C0A9100B687BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FFF5D1B1D2C0A9100B687BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FFF5D341D2C0A9100B687BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FFF5D351D2C0A9100B687BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FFF5D371D2C0A9100B687BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3815FECEE9AD5260BCE54399 /* Pods-ProgForceBurlaTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ProgForceBurlaTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burla.ProgForceBurlaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FFF5D381D2C0A9100B687BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 367973ADF69E3A0E0D42EEE8 /* Pods-ProgForceBurlaTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ProgForceBurlaTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burla.ProgForceBurlaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1FFF5D3A1D2C0A9100B687BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProgForceBurlaTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burla.ProgForceBurlaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgForceBurlaTest.app/ProgForceBurlaTest";
+			};
+			name = Debug;
+		};
+		1FFF5D3B1D2C0A9100B687BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProgForceBurlaTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burla.ProgForceBurlaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgForceBurlaTest.app/ProgForceBurlaTest";
+			};
+			name = Release;
+		};
+		1FFF5D3D1D2C0A9100B687BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProgForceBurlaTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burla.ProgForceBurlaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProgForceBurlaTest;
+			};
+			name = Debug;
+		};
+		1FFF5D3E1D2C0A9100B687BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProgForceBurlaTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burla.ProgForceBurlaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProgForceBurlaTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FFF5D061D2C0A9100B687BE /* Build configuration list for PBXProject "ProgForceBurlaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFF5D341D2C0A9100B687BE /* Debug */,
+				1FFF5D351D2C0A9100B687BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FFF5D361D2C0A9100B687BE /* Build configuration list for PBXNativeTarget "ProgForceBurlaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFF5D371D2C0A9100B687BE /* Debug */,
+				1FFF5D381D2C0A9100B687BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FFF5D391D2C0A9100B687BE /* Build configuration list for PBXNativeTarget "ProgForceBurlaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFF5D3A1D2C0A9100B687BE /* Debug */,
+				1FFF5D3B1D2C0A9100B687BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FFF5D3C1D2C0A9100B687BE /* Build configuration list for PBXNativeTarget "ProgForceBurlaTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFF5D3D1D2C0A9100B687BE /* Debug */,
+				1FFF5D3E1D2C0A9100B687BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1FFF5D151D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1FFF5D161D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodel */,
+			);
+			currentVersion = 1FFF5D161D2C0A9100B687BE /* ProgForceBurlaTest.xcdatamodel */;
+			path = ProgForceBurlaTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1FFF5D031D2C0A9100B687BE /* Project object */;
+}

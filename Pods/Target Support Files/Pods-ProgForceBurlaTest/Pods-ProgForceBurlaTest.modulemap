@@ -1,0 +1,6 @@
+framework module Pods_ProgForceBurlaTest {
+  umbrella header "Pods-ProgForceBurlaTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
