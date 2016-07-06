@@ -63,12 +63,34 @@ class ViewController: UIViewController {
             
             NetworkManager.sharedManager.getUserRepos(self.userNameTextField.text!) { (success, response, error) in
                 
+                print("responseREpos: \(response)")
+                
                 if success {
-                    let reposArray = RepoModel.getReposFrom(response!)
                     
-                    self.activityIndicator.stopAnimating()
+                    if response!["message"].string == "Not Found" {
+                        
+                        self.activityIndicator.stopAnimating()
+                        
+                        let alertController = UIAlertController(title: "ProgForceBurlaTest", message: "User not found", preferredStyle: .Alert)
+                        
+                        let OKAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+                            
+                        }
+                        
+                        alertController.addAction(OKAction)
+                        
+                        self.presentViewController(alertController, animated: true) {
+                            // ...
+                        }
+                    } else {
+                        let reposArray = RepoModel.getReposFrom(response!)
+                        
+                        self.activityIndicator.stopAnimating()
+                        
+                        self.performSegueWithIdentifier("showUserRepo", sender: reposArray)
+                    }
                     
-                    self.performSegueWithIdentifier("showUserRepo", sender: reposArray)
+                    
                     
                 } else {
                     print("error: \(error?.localizedDescription)")
