@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="42" y="363"/>
         </scene>
-        <!--Title-->
+        <!--ProgForceBurlaTest-->
         <scene sceneID="CqL-Fg-OXj">
             <objects>
                 <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="sM0-24-XyB" customClass="ViewController" customModule="ProgForceBurlaTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,7 +95,7 @@
                             <constraint firstItem="sTJ-mg-saS" firstAttribute="centerX" secondItem="H3h-J9-fcN" secondAttribute="centerX" id="rcd-ov-OIZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="8af-H6-cGr">
+                    <navigationItem key="navigationItem" title="ProgForceBurlaTest" id="8af-H6-cGr">
                         <barButtonItem key="leftBarButtonItem" width="32" id="lE1-3H-Dxr">
                             <view key="customView" contentMode="scaleToFill" id="08S-Wb-PPB">
                                 <rect key="frame" x="20" y="5" width="33" height="33"/>
@@ -128,6 +128,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="sTJ-mg-saS" id="7bx-RG-ufb"/>
                         <outlet property="knowMoreLabel" destination="xF0-r0-aQf" id="vVr-fr-hyJ"/>
+                        <outlet property="naviItem" destination="8af-H6-cGr" id="nI6-UK-ubd"/>
                         <outlet property="userNameTextField" destination="Xm0-KU-YhK" id="nbv-Mw-d2c"/>
                         <segue destination="blv-8s-CEG" kind="show" identifier="showUserRepo" id="WeS-D3-j3d"/>
                     </connections>

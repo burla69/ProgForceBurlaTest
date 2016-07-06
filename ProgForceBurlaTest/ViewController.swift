@@ -16,12 +16,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+    @IBOutlet weak var naviItem: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+                
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         self.prepareUI()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +35,7 @@ class ViewController: UIViewController {
     
     func prepareUI() {
         
-        if let appName =  NSBundle.mainBundle().infoDictionary!["CFBundleName"]{self.title = appName as? String}
+        if let appName =  NSBundle.mainBundle().infoDictionary!["CFBundleName"]{self.naviItem.title = appName as? String}
         
     }
     
